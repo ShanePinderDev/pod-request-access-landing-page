@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <title>Frontend Mentor | Pod request access landing page</title>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <main class="main">
+      <div class="bg-pattern-dots-box"></div>
+
+      <header class="header">
+        <img class="logo" src="assets/desktop/logo.svg" alt="logo" />
+      </header>
+      <div class="content-section">
+        <h1 class="heading-text">
+          Publish your podcasts
+          <span class="heading-emphasis-text">everywhere.</span>
+        </h1>
+        <p class="info-text">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="podcast-icons">
+          <img
+            class="spotify-icon"
+            src="assets/desktop/spotify.svg"
+            alt="spotify logo"
+          />
+          <img
+            class="apple-icon"
+            src="assets/desktop/apple-podcast.svg"
+            alt="apple logo"
+          />
+          <img
+            class="google-icon"
+            src="assets/desktop/google-podcasts.svg"
+            alt="google logo"
+          />
+          <img
+            class="pocket-casts-icon"
+            src="assets/desktop/pocket-casts.svg"
+            alt="Pocket-casts logo"
+          />
+        </div>
+        <div id="error"></div>
+        <form action="/" method="GET" id="form" class="form">
+          <div class="form-control">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email address"
+            />
+            <small>Error message</small>
+          </div>
+          <button type="submit" class="form-btn">Request Access</button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

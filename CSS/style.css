@@ -1,0 +1,413 @@
+/*
+Visual scale 
+
+2.488rem/39.81px	A Visual Type Scale
+2.074rem/33.18px	A Visual Type Scale
+1.728rem/27.65px	A Visual Type Scale
+1.44rem/23.04px	A Visual Type Scale
+1.2rem/19.20px	A Visual Type Scale
+1rem/16.00px	A Visual Type Scale
+0.833rem/13.33px	A Visual Type Scale
+0.694rem/11.11px	A Visual Type Scale
+0.579rem/9.26px	A Visual Type Scale
+*/
+
+/* Box sizing rules */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Chivo", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("/assets/mobile/image-host.jpg"),
+    linear-gradient(rgba(18, 23, 37, 0.97), rgba(18, 23, 37, 0.97));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.main {
+  max-width: 32.7rem;
+  min-height: 39.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  margin-bottom: 5.7rem;
+}
+
+.heading-text {
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  color: #54e6af;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1.6rem;
+}
+
+.heading-emphasis-text {
+  color: #fff;
+}
+
+.info-text {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: #c2cbe5;
+  text-align: center;
+  margin-bottom: 3.3rem;
+}
+
+.podcast-icons {
+  min-width: 31.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4.8rem;
+}
+
+.spotify-icon {
+  width: 5.6rem;
+  height: 1.7rem;
+}
+
+.apple-icon {
+  width: 4.5rem;
+  height: 1.7rem;
+}
+
+.google-icon {
+  width: 7.3rem;
+  height: 1.1rem;
+}
+
+.pocket-casts-icon {
+  width: 7.7rem;
+  height: 1.5rem;
+}
+
+.form-control {
+  position: relative;
+  padding-bottom: 3rem;
+}
+
+.form-control input {
+  max-width: 32.7rem;
+  background-color: #2c344b;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1.4rem;
+  text-align: left;
+  border: none;
+  border-radius: 2.8rem;
+  font-family: inherit;
+  padding-top: 0.9rem;
+  padding-left: 3.2rem;
+  padding-bottom: 0.9rem;
+  padding-right: 20rem;
+}
+
+.form-control input:focus {
+  color: #fff;
+  outline: none;
+}
+
+.form-control.success input {
+  border: 1px solid #2ecc71;
+}
+
+.form-control.error input {
+  border: 1px solid #e74c3c;
+}
+
+.form-control small {
+  min-width: 15rem;
+  font-size: 1.4rem;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 2rem;
+  color: #c2cbe5;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form-control.success small {
+  visibility: visible;
+  color: #2ecc71;
+}
+
+.form-btn {
+  max-width: 32.7rem;
+  color: #121725;
+  background-color: #54e6af;
+  font-size: 1.4rem;
+  font-family: inherit;
+  text-align: center;
+  padding: 0.9rem 10.9rem;
+  border: none;
+  border-radius: 2.8rem;
+}
+
+.form-btn:hover {
+  background-color: #b3ffe2;
+}
+
+@media (min-width: 600px) {
+  html {
+    background-color: rgba(18, 23, 37, 0.97);
+  }
+  body {
+    background-image: none;
+    background-color: rgba(18, 23, 37, 0.97);
+    justify-content: start;
+  }
+  .main {
+    min-width: 77.2rem;
+    min-height: 102.4rem;
+    position: relative;
+    background-image: url("/assets/mobile/image-host.jpg"),
+      linear-gradient(rgba(18, 23, 37, 0.97), rgba(18, 23, 37, 0.97));
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    background-position: top right;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+  }
+
+  .bg-pattern-dots-box {
+    background-image: url("/assets/desktop/bg-pattern-dots.svg"),
+      linear-gradient(rgba(18, 23, 37, 0.97), rgba(18, 23, 37, 0.97));
+    min-width: 23.2rem;
+    min-height: 10.4rem;
+    background-repeat: no-repeat;
+    grid-column: 2 / 6;
+    grid-row: 14 / 17;
+    align-self: flex-end;
+  }
+
+  .header {
+    max-width: 13.485rem;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    align-self: flex-start;
+  }
+
+  .content-section {
+    background-color: rgba(18, 23, 37, 0.97);
+    max-width: 63.5rem;
+    min-height: 50.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    grid-column: 2 / 12;
+    grid-row: 5 / 13;
+    z-index: 999;
+  }
+
+  .heading-text {
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  .info-text {
+    max-width: 44.5rem;
+    text-align: left;
+  }
+
+  .form {
+    display: flex;
+    position: relative;
+  }
+
+  .form-btn {
+    max-width: 16.2rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: calc(50% - 3.5rem);
+    right: 1rem;
+  }
+
+  .form-control input {
+    max-width: 42.7rem;
+  }
+
+  .podcast-icons {
+    order: 5;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    justify-content: end;
+    align-items: flex-end;
+  }
+
+  .main {
+    background-size: 48% 90%;
+    min-width: 127.5rem;
+    min-height: 64rem;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  .header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  .content-section {
+    max-width: 72.3rem;
+    grid-column: 1 / 11;
+    grid-row: 2 / 7;
+    align-self: start;
+  }
+
+  .heading-text {
+    max-width: 66.5rem;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
+  }
+
+  .info-text {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+  }
+
+  .form-control input {
+    max-width: 42.7rem;
+  }
+
+  .form-btn {
+    top: calc(50% - 3.45rem);
+    right: 0.5rem;
+  }
+
+  .podcast-icons {
+    min-width: 53.6rem;
+    margin-top: 4rem;
+    margin-bottom: 0;
+  }
+
+  .spotify-icon {
+    width: 9.6rem;
+    height: 2.9rem;
+  }
+
+  .apple-icon {
+    width: 7.8rem;
+    height: 2.9rem;
+  }
+
+  .google-icon {
+    width: 12.5rem;
+    height: 1.8rem;
+  }
+
+  .pocket-casts-icon {
+    width: 12.9rem;
+    height: 2.6rem;
+  }
+
+  .bg-pattern-dots-box {
+    min-width: 23.2rem;
+    min-height: 10.4rem;
+    grid-column: 11 / 13;
+    grid-row: 6 / 8;
+    align-self: start;
+  }
+}
